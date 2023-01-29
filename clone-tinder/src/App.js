@@ -1,11 +1,15 @@
+
+import GlobalState from "./context/GlobalState";
 import { GlobalStyled } from "./estilo_global/GlobalStyled";
-import Routers from "./routers/Routers";
+import { Router } from "./Router";
 
 function App() {
   return (
     <div>
       <GlobalStyled />
-      <Routers />
+      <GlobalState>
+        <Router/>
+      </GlobalState>
     </div>
   );
 }
