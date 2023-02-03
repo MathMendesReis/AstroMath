@@ -21,7 +21,8 @@ const GlobalState = ({ children }) => {
   },[])
 
   const data = {
-    profiles
+    profiles,
+    GetProfileToChoose
   }
   return <GlobalContext.Provider value={data}>{children}</GlobalContext.Provider>
 }

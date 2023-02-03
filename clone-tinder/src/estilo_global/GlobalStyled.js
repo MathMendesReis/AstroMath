@@ -7,4 +7,9 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
     font-family: helvetica;
 }
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  };
 `

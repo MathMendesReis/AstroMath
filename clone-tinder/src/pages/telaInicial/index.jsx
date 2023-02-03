@@ -1,14 +1,13 @@
-import React from 'react'
-import Card from '../../components/card'
+import React from "react";
+import { Card } from "../../componentes/card";
+import { Container } from "./styled";
 
 const TelaInicial = () => {
-
-
   return (
-      <div>
-          <Card/>
-    </div>
-  )
-}
+    <Container>
+      <Card />
+    </Container>
+  );
+};
 
-export default TelaInicial
+export default TelaInicial;
