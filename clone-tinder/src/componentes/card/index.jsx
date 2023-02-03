@@ -36,14 +36,14 @@ export const Card = () => {
             GetProfileToChoose();
           }}
         >
-          not macth
+          <h1>x</h1>
         </ButtonNotMacth>
         <button
           onClick={() => {
             GetProfileToChoose();
           }}
         >
-          match
+          <h1>✓</h1>
         </button>
       </ContainerButtons>
     </Container>
