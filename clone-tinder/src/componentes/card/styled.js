@@ -23,9 +23,9 @@ export const PhotoPeople = styled.img`
     width: 300px;
     max-height: 350px;
     border-radius: 8px;
-    position: absolute;
-    top: 170px;
-    left: 620px;
+    position: relative;
+    top: -350px;
+    left: 25px;
 
 `
 
@@ -36,11 +36,12 @@ flex-direction: column;
 justify-content: flex-start;
 width: 350px;
 z-index: 1;
-position: absolute;
-top:380px;
-left: 610px;
+position: relative;
+top:-150px;
+left: 35px;
 color: white;
 padding: 15px;
+/* background-color: black; */
 `
 
 
@@ -59,4 +60,5 @@ export const ContainerButtons = styled.div`
 export const ButtonNotMacth = styled.button`
     height: 70px;
     width: 50px;
+    
 `
