@@ -4,6 +4,28 @@ import axios from "axios"
 
 const GlobalState = ({ children }) => {
   const [profiles, setProfiles] = useState([])
+  const [matchs, setMacths] = useState([])
+  const [showButton, setShowButton] = useState(false);
+
+  const removeProfile = (profile) => {
+    const newArray = [...matchs]
+    const match = newArray.filter((pro) => {
+      return pro.id !== profile.id
+    })
+    setMacths(match)
+  }
+
+  const mudarButton = () => {
+    setShowButton(!showButton);
+  };
+  const listMatch = (profile) => {
+    const newArray = [...matchs]
+    const match = newArray.find(p => profile.id === p.id)
+    if (match === undefined) {
+      newArray.push(profile)
+      setMacths(newArray)
+    }
+  }
 
   const GetProfileToChoose = async () => {
     try {
@@ -22,7 +44,13 @@ const GlobalState = ({ children }) => {
 
   const data = {
     profiles,
-    GetProfileToChoose
+    GetProfileToChoose,
+    listMatch,
+    matchs,
+    showButton,
+    mudarButton,
+    removeProfile
+    
   }
   return <GlobalContext.Provider value={data}>{children}</GlobalContext.Provider>
 }

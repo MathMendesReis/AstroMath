@@ -18,4 +18,5 @@ export const Title = styled.img`
 
 export const ButtonMatches = styled.button`
     height: 30px;
+    margin-right: 25px;
 `

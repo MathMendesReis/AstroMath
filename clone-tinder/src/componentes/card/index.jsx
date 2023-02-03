@@ -14,8 +14,7 @@ import { Header } from "../header";
 
 export const Card = () => {
   const context = useContext(GlobalContext);
-  const { profiles, GetProfileToChoose } = context;
-  console.log(profiles);
+  const { profiles, GetProfileToChoose, listMatch } = context;
   const { photo, name, bio, age } = profiles;
   return (
     <Container>
@@ -41,6 +40,7 @@ export const Card = () => {
         <button
           onClick={() => {
             GetProfileToChoose();
+            listMatch(profiles);
           }}
         >
           <h1>✓</h1>

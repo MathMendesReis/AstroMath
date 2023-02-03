@@ -24,7 +24,7 @@ export const PhotoPeople = styled.img`
     max-height: 350px;
     border-radius: 8px;
     position: relative;
-    top: -350px;
+    top: -330px;
     left: 25px;
 
 `
