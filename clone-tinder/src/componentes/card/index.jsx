@@ -8,6 +8,8 @@ import {
   Container,
   ContainerButtons,
   PhotoPeople,
+  TextCheck,
+  TextX,
 } from "./styled";
 import { GlobalContext } from "../../context/GlobalContext";
 import { Header } from "../header";
@@ -25,7 +27,7 @@ export const Card = () => {
       </BackgroundImg>
       <BoxNameAndBio>
         <h1>
-          {name}, <span>{age}</span>
+          {name}, <span>{age} anos.</span>
         </h1>
         <p>{bio}</p>
       </BoxNameAndBio>
@@ -35,7 +37,7 @@ export const Card = () => {
             GetProfileToChoose();
           }}
         >
-          <h1>x</h1>
+          <TextX>x</TextX>
         </ButtonNotMacth>
         <button
           onClick={() => {
@@ -43,7 +45,7 @@ export const Card = () => {
             listMatch(profiles);
           }}
         >
-          <h1>✓</h1>
+          <TextCheck>✓</TextCheck>
         </button>
       </ContainerButtons>
     </Container>

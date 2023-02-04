@@ -7,9 +7,9 @@ export const Container = styled.div`
 
 `
 export const BackgroundImg = styled.div`
-height: 400px;
+height: 450px;
 width: 100%;
-padding: 30px;
+padding: 10px;
 
 `
 
@@ -20,12 +20,14 @@ export const BgImg = styled.img`
 
 `
 export const PhotoPeople = styled.img`
-    width: 300px;
+    width: 100%;
     max-height: 350px;
     border-radius: 8px;
     position: relative;
-    top: -330px;
-    left: 25px;
+    top: -420px;
+    padding: 30px;
+
+    /* left: 25px; */
 
 `
 
@@ -37,9 +39,9 @@ justify-content: flex-start;
 width: 350px;
 z-index: 1;
 position: relative;
-top:-150px;
+top:-140px;
 left: 35px;
-color: white;
+color: BurlyWood		;
 padding: 15px;
 /* background-color: black; */
 `
@@ -61,4 +63,14 @@ export const ButtonNotMacth = styled.button`
     height: 70px;
     width: 50px;
     
+`
+
+export const TextX = styled.h1`
+color: red;
+text-transform: uppercase;
+font-size: 50px;
+`
+
+export const TextCheck = styled(TextX)`
+    color: green;
 `

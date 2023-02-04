@@ -30,7 +30,7 @@ export const Header = () => {
             mudarButton();
           }}
         >
-          false
+          Meus matchs
         </ButtonMatches>
       )}
     </ContainerHeader>

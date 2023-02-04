@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const Imagem = styled.img`
     width: 35px;
+    height: 35px;
     border-radius: 25px ;
 `
 
