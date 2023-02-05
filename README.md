@@ -1,4 +1,4 @@
-# Projeto React API Pokemons
+# Projeto React API AstroMaacth
 
 ![PokeAPI](./clone-tinder/src/img/Astromatch.png)
 
